@@ -9,7 +9,7 @@ import math
 sum = int(input("Введите  сумму чисел: "))
 mult = int(input("Введите  произведение чисел: "))
 
-d = sum*sum-4*mult
+d = sum*sum-4*mult #дискриминант
 if d<0 :
      print("Нет решения")
 elif d == 0 :
@@ -17,7 +17,7 @@ elif d == 0 :
     print("Первое число", int (x))
     print("Второе число", int (x))
 else :
-    x = -(-sum-math.sqrt(d))/2
+    x = -(-sum-math.sqrt(d))/2 # 2 корень не считаем , так как это и будет y
     y = sum -x 
     print("Первое число", int (x))
     print("Второе число", int (y))
